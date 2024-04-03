@@ -1,20 +1,255 @@
-.layout{
-    width: 375px;
-    height: 696px;
-    padding: 0%;
-    margin: 0%;
-    background-color: white;
-    border-bottom-left-radius: 80px;
-    position: relative;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F5F5F5;
 }
 
+.head {
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px;
+}
 
-.nav{
-    width: 100%;
-    height: 50px;
-    background-color: black;
+.head a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navbar {
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.37);
+}
+
+.logoup {
+  position: absolute;
+  left: 50px;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  width: 100px;
+  height: auto;
+}
+
+.logo {
+  left: 50px;
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.options {
+  color: rgb(152, 152, 152);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.special {
+  color: rgb(255, 0, 0);
+  padding: 14px 20px;
+  border: 5px solid red;
+  align-self: flex-end;
+}
+
+.special a {
+  color: red;
+  text-decoration: none;
+}
+
+.nav-item:hover,
+.special:hover {
+  background-color: grey;
+}
+
+.event-section {
+  text-align: center;
+  padding: 50px;
+  background: url('background.png') no-repeat center center;
+  background-size: cover;
+  color: #333;
+}
+
+.event-section h1 {
+  font-size: 36px;
+  color: red;
+  margin-bottom: 10px;
+  max-width: 50%;
+}
+
+.event-section h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 900;
+  max-width: 500px;
+  text-align: left;
+  margin-left: 40px;
+}
+
+.event-section p {
+  font-size: 12px;
+  line-height: 1.6;
+  max-width: 410px;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.event-section .event-date {
+  font-size: 24px;
+  color: red;
+  margin-top: 20px;
+  font-weight: 900;
+  border-radius: 15px;
+  margin-bottom: 1px;
+}
+
+.event-section .event-location {
+  font-size: 20px;
+  margin-top: 5px;
+  max-width: 600px;
+}
+
+.Schedule {
+    margin-top: 100px;
+  text-align: center;
+  color: white;
+  padding: 50px;
+  background-image: url('page2.png');
+}
+
+.program-section h1 {
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.card {
+  background: #333;
+  padding: 1rem;
+  width: 200px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  width: 50px;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  color: #ff5722;
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.whole-schdeule{
+  display: inline-block;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  background-color: #ff5722;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s;
+}
+
+.whole-program:hover {
+  background-color: #e64a19;
+}
+
+.Top-Scorers {
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+  }
+  
+  .Top-Scorers h2 {
+    font-size: 2em;
+  }
+  
+  .section-hr {
+    width: 50px;
+    height: 4px;
+    margin: 0 auto 20px;
+    border: none;
+    background-color: #ff5722; /* Or any other color */
+  }
+  
+  .player-cards-container {
     display: flex;
-    position: absolute;
-    top: 20px;
-}
-
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .player-card {
+    display: flex;
+  
+    /* align-items: center; */
+    background-color: #fff; /* Card background */
+    border-radius: 4px; /* Rounded corners for the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    width: 400px; /* Adjust width as needed */
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .speaker-photo {
+    width: 100px; /* Adjust size as needed */
+    height: 120px;
+    margin-right: 20px;
+  }
+  
+  .speaker-info h3 {
+    margin: 0;
+    color: #333; /* Title color */
+    font-size: 1.5em;
+  }
+  
+  .speaker-info .title {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    color: red;
+  }
+  
+  .speaker-info p {
+    color: #333; /* Text color */
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+  
+  .prof-hr {
+    width: 50px;
+    height: 2px;
+    margin: 0 auto 20px;
+    border: none;
+    background-color: #ff5722; /* Or any other color */
+  }
